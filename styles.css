@@ -90,8 +90,70 @@ span {
     margin-bottom: 1rem;
 }
 
+
+/* ABOUT ME */
 .AboutPage {
     color: white;
 }
+
+
+.AboutPage {
+    position: relative; 
+    padding-top: 470px;
+    background-color: rgb(26, 24, 24);
+    min-height: 100vh; 
+    color: aliceblue; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 50px; 
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.Introduction {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.Introduction h1 {
+    font-size: 12rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.AboutImg img {
+    filter: grayscale(10);
+    border-radius: 30%;
+    width: 55vw;
+    min-width: 300px;
+    position: relative;
+    top: -400px;
+    z-index: 2;
+}
+
+.aboutCont {
+    z-index: 2;
+    max-width: 600px;
+}
+
+.aboutCont h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: -150px;
+    left: -50px;
+}
+
+
+
+
 
 
