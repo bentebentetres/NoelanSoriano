@@ -12,7 +12,7 @@ body {
     overflow-x:hidden ;
     background-color: rgb(12, 12, 12);
 }
-/*WEBHEADER SECTION*/
+/* WEBHEADER SECTION */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ header {
     align-items: center;
     z-index: 100;
     text-decoration: none;
-}
+} 
 
 .topnav {
     margin-right: 80px;
@@ -40,7 +40,7 @@ header {
     font-weight: 500;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
-}
+} 
 
 /*BODYCONTENTS SECTION*/
 .HomePage {
@@ -48,6 +48,7 @@ header {
 }
 
 .section {
+    display: flex;
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
@@ -62,7 +63,6 @@ header {
 
 .noelanImage {
     padding-left: 20px;
-    padding-top: 50px;
     gap: 8rem;
 }
 
@@ -90,12 +90,10 @@ span {
     margin-bottom: 1rem;
 }
 
-
 /* ABOUT ME */
 .AboutPage {
     color: white;
 }
-
 
 .AboutPage {
     position: relative; 
@@ -122,7 +120,7 @@ span {
 }
 
 .Introduction h1 {
-    font-size: 12rem;
+    font-size: 11rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
 }
@@ -151,6 +149,86 @@ span {
     top: -150px;
     left: -50px;
 }
+
+/* ContactsPage */
+.ContactsPage {
+    position: relative; 
+    padding: 100px;
+    background-color: rgb(26, 24, 24);
+    min-height: 100vh; 
+    color: aliceblue; 
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.educ {
+    display: flex;
+    position: relative;
+    align-items: center; /* Center EducDes and EducImage vertically */
+    gap: 30px; /* Space between EducDes and EducImage */
+    z-index: 2;
+}
+
+.EducDes {
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 2rem;
+    position: relative;
+    top: -600px;
+    left: 200px;
+}
+
+.EducDes h4{
+    font-size: 2.1rem;
+    padding: 1.2rem;
+    color: rgb(194, 0, 0);
+}
+
+.EducDes p{
+    font-size: 1.2rem;
+    color: aliceblue;
+    padding-left: 50px;
+}
+
+
+.EducImage {
+    z-index: 2;
+    position: relative;
+}
+
+.EducImage img {
+    display: block;
+    width: 60vw;
+    position: relative;
+    min-width: 300px;
+    filter: grayscale(10);
+    top: -500px;
+    left: 500px;
+}
+
+.Education {
+    position: absolute;
+    top: 60%; /* Put the H1 lower below educ section */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Behind the image */
+}
+
+.Education h1{
+    font-size: 12rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    margin: 0;
+    color: aliceblue;
+}
+
+
+
+
+
+
 
 
 
