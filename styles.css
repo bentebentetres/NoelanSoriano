@@ -314,61 +314,45 @@ span {
 }
 
 /* For mobile phones (480px and below) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
-    .socials h1 {
-        font-size: 4rem;
-    }
-
-    .socImg {
-        top: -250px;
-    }
-
-    .socImg img {
-        width: 90vw;
-    }
-
-    .numbers {
-        position: static;
-        width: 90%;
-        margin: 0 auto;
-        font-size: 1.2rem;
-        gap: 15px;
-        border: 3px solid yellow;
-    }
-
-    .contact-item {
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .contact-item i {
-        font-size: 24px;
-    }
-
-    .EducDes, .EducImage img, .Introduction h1, .aboutCont h3 {
-        position: static;
-        width: 90%;
-        font-size: 1.2rem;
+    .HomePage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .topnav {
-        margin: 0;
+    .noelanImage {
+        padding: 0;
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
-    .topnav a {
-        margin: 10px;
+    .noelanImage img {
+        width: 60vw;
+        border: 7px solid rgb(227, 252, 0);
     }
+
+    #titleName {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #titleName h1 {
+        font-size: 2rem;
+        border: 7px solid yellow;
+    }
+
+    /* Keep rest of your responsive rules here */
 }
+
 
 
 
