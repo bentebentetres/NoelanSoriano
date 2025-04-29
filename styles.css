@@ -98,7 +98,7 @@ span {
 .AboutPage {
     position: relative; 
     padding-top: 470px;
-    background-color: rgb(26, 24, 24);
+    background-color: rgb(12, 12, 12);
     min-height: 100vh; 
     color: aliceblue; 
     display: flex;
@@ -154,7 +154,7 @@ span {
 .ContactsPage {
     position: relative; 
     padding: 100px;
-    background-color: rgb(26, 24, 24);
+    background-color: rgb(12, 12, 12);
     min-height: 100vh; 
     color: aliceblue; 
     height: 100%;
@@ -224,6 +224,151 @@ span {
     color: aliceblue;
 }
 
+/* SOCIAL MEDIA */
+.SocMed {
+    height: 100%;
+    background-color:rgb(12, 12, 12);
+}
+
+.socials {
+    color: aliceblue;
+    height: 12rem;
+    padding-top:40px ;
+}
+
+.socials h1 {
+    display: flex;
+    font-size:12rem;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+.socImg {
+    display: flex;
+    position: relative;
+    top: -470px;
+}
+
+.socImg img {
+    width: 50vw;
+    z-index: 2;
+    filter:grayscale(10) ;
+}
+
+.numbers {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column; /* Arrange in a column */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    position: relative;
+    top: 20%;
+    left: 60%;
+    gap: 40px;
+    padding: 20px;
+    width: 38rem;
+    font-size: 2rem;
+    border: 7px solid yellow;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-item i {
+    font-size: 40px;
+    color: white;
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .socials h1 {
+        font-size: 6rem;
+    }
+
+    .socImg img {
+        width: 80vw;
+        top: -300px;
+    }
+
+    .numbers {
+        left: 10%;
+        width: 80%;
+        font-size: 1.5rem;
+        padding: 10px;
+        gap: 20px;
+        border: 5px solid yellow;
+    }
+
+    .contact-item {
+        gap: 20px;
+    }
+
+    .contact-item i {
+        font-size: 30px;
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+
+    .socials h1 {
+        font-size: 4rem;
+    }
+
+    .socImg {
+        top: -250px;
+    }
+
+    .socImg img {
+        width: 90vw;
+    }
+
+    .numbers {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        gap: 15px;
+        border: 3px solid yellow;
+    }
+
+    .contact-item {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .contact-item i {
+        font-size: 24px;
+    }
+
+    .EducDes, .EducImage img, .Introduction h1, .aboutCont h3 {
+        position: static;
+        width: 90%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .topnav {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .topnav a {
+        margin: 10px;
+    }
+}
 
 
 
